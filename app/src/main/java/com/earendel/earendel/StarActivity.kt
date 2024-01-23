@@ -70,6 +70,6 @@ class StarActivity : AppCompatActivity() , AdapterView.OnItemClickListener {
 
     private fun writeToFirebase(options: String) {
         val optionsRef = databaseReference.child("Planet")
-        optionsRef.push().setValue(options)
+        optionsRef.setValue(options)
     }
 }
